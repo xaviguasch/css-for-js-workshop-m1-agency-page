@@ -150,11 +150,11 @@ main {
 
 .indented-heading {
   background-color: var(--clr-gold-light-bg);
-  padding: 20px 0 20px 32px;
+  padding: 20px 32px 20px 32px;
   margin-left: -32px;
   border-bottom: 8px solid var(--clr-gold-darker-bg);
 
   line-height: 1.25;
 
-  max-width: 400px;
+  width: fit-content;
 }
