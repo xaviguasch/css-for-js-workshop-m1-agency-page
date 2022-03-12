@@ -1,12 +1,143 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
-html,
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Add styles here! */
+/* ================== */
+/* Custom properties */
+/* ================== */
+
+:root {
+  --ff-main: 'Lato', sans-serif;
+
+  /* --fw-light: 300; */
+  --fw-regular: 400;
+  /* --fw-medium: 500; */
+  /* --fw-semi-bold: 600; */
+  --fw-bold: 700;
+
+  --fs-07: 0.438rem;
+  --fs-08: 0.5em;
+  --fs-09: 0.563em;
+  --fs-10: 0.625rem;
+  --fs-11: 0.688em;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875em;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+  --fs-80: 5rem;
+
+  /* Text */
+  --clr-white-text: hsla(0, 0%, 100%, 1);
+  --clr-black-text: hsl(0, 0%, 0%);
+  --clr-green-text: hsl(160deg, 100%, 30%);
+
+  /* Background  */
+  --clr-white-bg: hsla(0, 0%, 100%, 1);
+
+  /* Others */
+  --clr-gold-light-bg: hsl(45deg, 100%, 50%);
+  --clr-gold-darker-bg: hsl(45deg, 100%, 40%);
+  --clr-black-bg: hsl(0deg, 0%, 0%);
+
+  --clr-very-dark-gray-bg: hsl(0deg, 0%, 10%);
+  --clr-dark-gray-bg: hsl(0deg, 0%, 30%);
+  --clr-medium-gray-bg: hsl(0deg, 0%, 40%);
+  --clr-light-gray-bg: hsl(0deg, 0%, 60%);
+}
+
+body {
+  background: var(--clr-light-gray-bg);
+
+  color: var(--clr-black-text);
+  font-family: var(--ff-main);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 1.666;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================== */
+/* Typography */
+/* ================== */
+.title {
+  font-size: var(--fs-32);
+  font-weight: var(--fw-bold);
+}
+
+.indented-heading {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-bold);
+}
+
+p {
+  font-size: var(--fs-18);
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
+
+header {
+  padding: 64px 24px 48px;
+  border-bottom: 8px solid var(--clr-dark-gray-bg);
+  background: var(--clr-white-bg);
+}
+
+p {
+  margin-top: 16px;
+}
+
+strong {
+  color: var(--clr-green-text);
+}
+
+.card {
+  margin-top: 48px;
+  background: var(--clr-white-bg);
+  padding: 8px 24px 24px;
+  border-bottom: 8px solid var(--clr-dark-gray-bg);
+}
+
+.indented-heading {
+  background-color: var(--clr-gold-light-bg);
+  padding: 24px;
+  margin-left: -24px;
+  border-bottom: 8px solid var(--clr-gold-darker-bg);
+
+  line-height: 1.5;
+}
