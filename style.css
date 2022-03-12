@@ -108,14 +108,26 @@ p {
 /* Utility styles */
 /* ================== */
 
+.wrapper {
+}
+
 /* ================== */
 /* SECTIONS */
 /* ================== */
 
 header {
-  padding: 64px 24px 48px;
   border-bottom: 8px solid var(--clr-dark-gray-bg);
   background: var(--clr-white-bg);
+}
+
+.max-width-wrapper {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding: 64px 24px 48px;
+  max-width: 425px;
 }
 
 p {
@@ -127,17 +139,21 @@ strong {
 }
 
 .card {
+  margin: 0 auto;
   margin-top: 48px;
   background: var(--clr-white-bg);
   padding: 8px 24px 24px;
   border-bottom: 8px solid var(--clr-dark-gray-bg);
+  max-width: 740px;
 }
 
 .indented-heading {
   background-color: var(--clr-gold-light-bg);
-  padding: 24px;
-  margin-left: -24px;
+  padding: 20px 0 20px 32px;
+  margin-left: -32px;
   border-bottom: 8px solid var(--clr-gold-darker-bg);
 
-  line-height: 1.5;
+  line-height: 1.25;
+
+  max-width: 400px;
 }
